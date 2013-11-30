@@ -7,23 +7,16 @@ function top() {
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/style.css"/>
-    <script src="/jquery.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=743342905682343";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
   <?php
 }
 
 function bottom() {
   ?>
+  <script src="/jquery.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,6 +27,13 @@ function bottom() {
 	  ga('send', 'pageview');
 	
 	</script>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=743342905682343";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   </body>
   </html>
   <?php
