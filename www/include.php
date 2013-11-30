@@ -59,5 +59,3 @@ function shareButtons($text,$url) {
 }
 
 ?>
-
-
